@@ -5,7 +5,6 @@ import Collection from '../components/Collection/Collection';
 import MintGeneral from '../components/MintGeneral/MintGeneral';
 import About from '../components/About/About';
 import Footer from '../components/Footer/Footer';
-import About from '../components/About/About';
 
 const Home = () => {
   return (
