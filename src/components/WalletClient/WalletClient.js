@@ -10,6 +10,7 @@ import {
 import WalletButton from "../WalletButton/WalletButton";
 import Web3 from "web3";
 import { factoryAddress, factoryAbi } from "../../services/onboard/contract";
+import styles from "./WalletClient.module.css"
 
 const WalletClient = () => {
   const [quantity, setquantity] = useState(1);
@@ -184,7 +185,7 @@ const WalletClient = () => {
               <span>10</span>
               <button disabled="">+</button>
               </div>*/}
-            <button disabled={!address ? true : false} onClick={handleMint}>
+            <button className={styles["buttonMint"]} disabled={!address ? true : false} onClick={handleMint}>
               Mint
             </button>
             {/*{address ? (
