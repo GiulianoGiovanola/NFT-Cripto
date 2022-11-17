@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 import WalletClient from "../WalletClient/WalletClient";
 
 const MintGeneral = () => {
   return (
     <>
-    <div className='homeContainer'>
+      <div id="Mint" className="homeContainer">
         <h1>Minimal Mint</h1>
-        <div className='modulesContainer'>
+        <div className="modulesContainer">
           <WalletClient />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MintGeneral
+export default MintGeneral;

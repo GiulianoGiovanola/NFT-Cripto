@@ -20,19 +20,24 @@ const Navbar = () => {
           <nav className="intro">
             <ul>
               <li>
-                <a href="index.html">Intro</a>
+                <a href="#Collection" id="Check_Collection">
+                  Collection
+                </a>
               </li>
               <li>
-                <a href="works.html">Works</a>
+                <a href="#Mint" id="Mint_it">
+                  Mint
+                </a>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <a href="#Faq" id="FAQ">
+                  FAQ
+                </a>
               </li>
               <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
+                <a href="#About" id="About_us">
+                  About
+                </a>
               </li>
             </ul>
           </nav>

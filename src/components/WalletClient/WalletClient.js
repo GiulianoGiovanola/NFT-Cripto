@@ -10,15 +10,18 @@ import {
 import WalletButton from "../WalletButton/WalletButton";
 import Web3 from "web3";
 import { factoryAddress, factoryAbi } from "../../services/onboard/contract";
-import styles from "../WalletClient/WalletClient.module.css";
 
 const WalletClient = () => {
+  const [quantity, setquantity] = useState(1);
+  const [price] = useState(0.05);
   const onboard = useOnboard();
   const wallet = useWallet();
   const address = useAddress();
   const balance = useBalance();
   const provider = useWalletProvider();
   const web3 = new Web3(provider);
+
+  const cantidad = (quantityValue) => setquantity(quantityValue);
 
   const [userBalance, setUserBalance] = useState(0);
 
@@ -64,20 +67,20 @@ const WalletClient = () => {
       console.log("Sale Started", publicSaleStarted);
       console.log("Price", price);
 
-      const count = 1;
+      const quantity = 1;
 
       const mintParams = {
         proof: ["0x0000000000000000000000000000000000000000"],
         leaf: "0x0000000000000000000000000000000000000000",
-        count,
+        quantity,
       };
 
-      const total = parseInt(count) * parseFloat(price);
+      const total = parseInt(quantity) * parseFloat(price);
       // const totalFixed = parseFloat(total.toFixed(4));
       // const valueEth = web3.utils.toWei(`${totalFixed}`, 'ether');
 
       await myContract.methods
-        .mint(mintParams.proof, mintParams.leaf, parseInt(mintParams.count))
+        .mint(mintParams.proof, mintParams.leaf, parseInt(mintParams.quantity))
         .send({ from: address, value: total })
         .once("transactionHash", function (hash) {
           // setUserConfirmation(`success`);
@@ -98,19 +101,35 @@ const WalletClient = () => {
     } catch (error) {}
   };
 
-  const cantidad = document.getElementsByClassName("cantidad").value;
+  const plus = () => {
+    if (quantity < 2) {
+      cantidad(quantity + 1);
+    }
+  };
+  const minus = () => {
+    if (quantity > 1) {
+      cantidad(quantity - 1);
+    }
+  };
+
+  /*let cantidad = document.getElementsByClassName("cantidad").defaultValue;
   const minus = 1;
   const plus = 2;
 
-  /*function button (num){
-    cantidad = cantidad+num;
-    if(cantidad === minus){
-      document.getElementsByClassName("minus").disabled = true;
-    } else if (cantidad === plus){
-      document.getElementsByClassName("plus").disabled = true;
-    }
-  }*/
+  cantidad = 1;
 
+  function button(num) {
+    cantidad = cantidad + num;
+    if (cantidad === minus) {
+      document.getElementsByClassName("minus").disabled = true;
+      document.getElementsByClassName("plus").disabled = false;
+    } else if (cantidad === plus) {
+      document.getElementsByClassName("plus").disabled = true;
+      document.getElementsByClassName("minus").disabled = false;
+    }
+  }
+
+  button(1);*/
 
   return onboard ? (
     <div className="wallet-client">
@@ -119,7 +138,7 @@ const WalletClient = () => {
           <h2>How hungry are you?</h2>
           <h4>Connect to Wallet!</h4>
           <p>
-            Price: <span>0,000000000000000005ETH</span>
+            Price: <span>0.05ETH</span>
           </p>
           <WalletButton />
         </div>
@@ -133,17 +152,34 @@ const WalletClient = () => {
           <div>
             <h4>Connected with {wallet.name}</h4>
             <p>
-              Price: <span>0,000000000000000005ETH</span>
+              Price: <span>{price} ETH</span>
             </p>
             <p>Balance {userBalance} eth</p>
-            <div class="cart">
-              <div class="addRemove">
-                <a href="#" className={styles["minus"]} /*onClick="button(-1)"*/>-</a>
-                <input type="numeric" className={styles["cantidad"]} value="1" />
-                <a href="#" className={styles["plus"]} /*onClick="button(1)"*/>+</a>
+            <div className="cart">
+              <div className="addRemove">
+                {/*<button className={styles["minus"]} onClick={button(-1)}>
+                  -
+                </button>
+                <input
+                  type="numeric"
+                  className={styles["cantidad"]}
+                  defaultValue={cantidad}
+                />
+                <button className={styles["plus"]} onClick={button(1)}>
+                  +
+            </button>*/}
+                <button disabled={quantity === 1 ? true : false} onClick={minus}>
+                  -
+                </button>
+                <label> {quantity} </label>
+                <button disabled={quantity === 2 ? true : false} onClick={plus}>
+                  +
+                </button>
               </div>
             </div>
-            {/*<div class="CountSelector_count_wrapper__1KAwk">
+            <span>Total: </span>
+            <span>{(price * quantity).toFixed(2)} ETH</span>
+            {/*<div class="quantity_quantity_wrapper__1KAwk">
               <button>-</button>
               <span>10</span>
               <button disabled="">+</button>
