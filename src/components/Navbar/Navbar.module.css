@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 1em;
+    margin: 0 3em;
 }
 
 .divheader div{
@@ -35,5 +35,14 @@
 }
 
 .options{
-    margin: 0 0.5em;
+    margin-right: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+
+.options:hover{
+    color: #ff2390;
+    transition: 0.5s;
 }

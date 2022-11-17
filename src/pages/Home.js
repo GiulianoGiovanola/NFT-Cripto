@@ -12,6 +12,8 @@ const Home = () => {
     <div
       style={{
         backgroundImage: `url(${background})`,
+        /*background: `linear-gradient(180deg, rgba(17, 17, 17, 0.6) rgba(60, 60, 60, 0.2)), linear-gradient(90deg, #40424b, #1c1d24), url(${background});`,*/
+        /*backgroundImage: "linear-gradient(180deg, rgba(17, 17, 17, 0.6), rgba(60, 60, 60, 0.2)), url(/static/media/background.73a83ea2.jpg), linear-gradient(90deg, #40424b, #1c1d24)",*/
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         backgroundSize: "cover"
