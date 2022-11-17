@@ -1,59 +1,39 @@
-.container{
-    box-shadow: 0 -3px 10px 1px whitesmoke;
+.divheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1em;
 }
 
-@media (min-width: 481px) and (max-width: 1199px){
-    .containerdiv{
-        width: 100%;
-        padding-left: 0 !important;
-    }
+.divheader div{
+    width: 30%;
+}
 
-    .containerimg{
-        width: 20% !important;
-        padding: 1em 0 1em 1em !important;
-    }
+.divheader div img{
+    width: 10%;
+}
 
-    .containermenu{
-        width: 50%;
-        height: 60px !important;
-    }
+.containeroptions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 42% !important;
+}
 
-    .menu{
-        right: 0em !important;
-    }
+.divheader div, .containeroptions{
+    margin: 0.5em 0;
+}
 
-    .img{
-        min-width: 90% !important;
-        max-width: 90% !important;
-        min-height: 90% !important;
-        max-height: 90% !important;
-    }
-  }
+.containeroptions nav{
+    margin-right: 2em;
+}
 
-@media (max-width: 480px){
-    .containerdiv{
-        width: 100%;
-        padding-left: 0 !important;
-    }
+.intro{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
 
-    .containerimg{
-        width: 50%;
-        padding: 1em 0 1em 1em !important;
-    }
-
-    .containermenu{
-        width: 50%;
-        height: 60px !important;
-    }
-
-    .menu{
-        left: 0 !important;
-    }
-
-    .img{
-        min-width: 90% !important;
-        max-width: 90% !important;
-        min-height: 90% !important;
-        max-height: 90% !important;
-    }
-  }
+.options{
+    margin: 0 0.5em;
+}
