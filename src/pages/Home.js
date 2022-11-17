@@ -6,6 +6,7 @@ import MintGeneral from '../components/MintGeneral/MintGeneral';
 import About from '../components/About/About';
 import Footer from '../components/Footer/Footer';
 
+
 const Home = () => {
   return (
     <>
