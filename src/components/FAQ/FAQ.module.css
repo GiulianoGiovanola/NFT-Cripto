@@ -19,8 +19,8 @@
         
 }
 
-.faqBody .faqRow{
-    padding: 24px 0;
+.faq-body .faq-row{
+    padding: 24px 0 !important;
 }
 
 .row-title {
