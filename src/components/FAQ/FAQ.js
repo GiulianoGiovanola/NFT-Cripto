@@ -26,16 +26,16 @@ const data = {
 export default class FAQ extends Component {
   render() {
     return (
-      <div>
+      <div className={styles["content"]}>
         <Faq
           data={data}
           styles={{
             bgColor: 'white',
-            titleTextColor: "blue",
+            //titleTextColor: "blue",
             titleTextSize: '48px',
-            rowTitleColor: 'blue',
-            rowTitleTextSize: 'medium',
-            rowContentColor: 'grey',
+            //rowTitleColor: 'blue',
+            //rowTitleTextSize: 'medium',
+            rowContentColor: '#747474',
             rowContentTextSize: '16px',
             rowContentPaddingTop: '10px',
             rowContentPaddingBottom: '10px',
