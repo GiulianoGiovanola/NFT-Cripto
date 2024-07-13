@@ -3,6 +3,7 @@ import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Collection from "../components/Collection/Collection";
 import MintGeneral from "../components/MintGeneral/MintGeneral";
+import FAQ from "../components/FAQ/FAQ";
 import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 import background from "../assets/background2.png";
@@ -48,9 +49,10 @@ const Home = () => {
     >
       <Navbar />
       <Hero />
+      <About />
       <Collection dataimg={dataimg} />
       <MintGeneral />
-      <About />
+      <FAQ />
       <Footer />
     </div>
   );
