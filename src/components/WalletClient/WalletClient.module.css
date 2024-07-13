@@ -2,3 +2,8 @@
     display: block !important;
     margin: 0 auto;
 }
+
+.wallet-client{
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(25px);
+}
