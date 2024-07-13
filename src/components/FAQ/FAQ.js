@@ -41,7 +41,7 @@ export default class FAQ extends Component {
             rowContentPaddingBottom: '10px',
             rowContentPaddingLeft: '50px',
             rowContentPaddingRight: '150px',
-            arrowColor: "red",
+            arrowColor: "#ff1e4a",
             transitionDuration: "1s",
             timingFunc: "ease"
           }}
