@@ -36,27 +36,27 @@
 }
 */
 
-.faq-row-wrapper {
+.styles_faq-row-wrapper {
     padding: 4em 8em !important;
 
-    .faq-title {
+    .styles_faq-title {
         padding: 24px 0;
 
     }
 
-    .faq-body {
+    .styles_faq-body {
 
-        .faq-row {
+        .styles_faq-row {
             padding: 24px 0;
 
-            .row-title {
+            .styles_row-title {
                 font-weight: 600;
                 color: #252525;
             }
 
-            .row-content {
+            .styles_row-content {
 
-                .row-content-text {
+                .styles_row-content-text {
                 }
             }
         }
