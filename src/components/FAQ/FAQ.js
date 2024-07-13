@@ -31,9 +31,10 @@ export default class FAQ extends Component {
           data={data}
           styles={{
             bgColor: '#ff1e4a',
-            //titleTextColor: "blue",
+            titleTextColor: "white",
             titleTextSize: '48px',
-            //rowTitleColor: 'blue',
+            rowTitleColor: '#f1f1f1',
+            rowTitleTextWeight: '600',
             //rowTitleTextSize: 'medium',
             rowContentColor: '#e1e1e1',
             rowContentTextSize: '16px',
