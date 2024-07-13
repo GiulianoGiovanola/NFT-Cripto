@@ -16,7 +16,11 @@
 }
 
 .faq-row {
-    
+        
+}
+
+.faq-body .faq-row{
+    padding: 24px 0;
 }
 
 .row-title {
