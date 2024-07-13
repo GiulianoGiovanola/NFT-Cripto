@@ -31,7 +31,7 @@ export default class FAQ extends Component {
           data={data}
           styles={{
             bgColor: 'white',
-            padding: '4em 8em',
+            wrapperPadding: '4em 8em',
             //titleTextColor: "blue",
             titleTextSize: '48px',
             //rowTitleColor: 'blue',
