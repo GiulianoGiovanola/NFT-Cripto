@@ -3,7 +3,7 @@ import Faq from 'react-faq-component';
 import styles from "./FAQ.module.css"
 
 const data = {
-  title: "FAQ (How it works)",
+  title: "How can we help?",
   rows: [
     {
       title: "Lorem ipsum dolor sit amet,",
@@ -26,7 +26,7 @@ const data = {
 export default class FAQ extends Component {
   render() {
     return (
-      <div className={styles["content"]}>
+      <div id="FAQ" className={styles["content"]}>
         <Faq
           data={data}
           styles={{
