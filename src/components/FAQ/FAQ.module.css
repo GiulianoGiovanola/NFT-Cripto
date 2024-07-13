@@ -19,18 +19,11 @@
         
 }
 
-.faqBody .faqRow{
-    padding: 24px 0 !important;
-}
-
 .row-title {
     font-weight: 600;
     color: #252525;
 }
 
-.row-content {
-    
-}
-
-.row-content-text {
+.faq-title .styles_faq-row__2YF3c, .faq-row .styles_faq-row__2YF3c{
+    padding: 24px 0 !important;
 }
