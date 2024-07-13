@@ -1,4 +1,4 @@
-.content{
+/*.content{
     background-color: white !important;
     padding: 4em 8em !important;
 }
@@ -19,7 +19,7 @@
         
 }
 
-.faq-body .faq-row{
+.faqBody .faqRow{
     padding: 24px 0 !important;
 }
 
@@ -33,4 +33,32 @@
 }
 
 .row-content-text {
+}
+*/
+
+.faq-row-wrapper {
+    padding: 4em 8em !important;
+
+    .faq-title {
+        padding: 24px 0;
+
+    }
+
+    .faq-body {
+
+        .faq-row {
+            padding: 24px 0;
+
+            .row-title {
+                font-weight: 600;
+                color: #252525;
+            }
+
+            .row-content {
+
+                .row-content-text {
+                }
+            }
+        }
+    }
 }
