@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles["footer"]}>
-        <div className={styles["content has-text-centered"]}>
+        <div>
           <p>
             &copy; 2024 Pink Rabbit NFT. All rights reserved.
           </p>
