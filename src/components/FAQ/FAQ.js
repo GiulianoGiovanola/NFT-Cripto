@@ -30,18 +30,18 @@ export default class FAQ extends Component {
         <Faq
           data={data}
           styles={{
-            bgColor: 'white',
+            bgColor: '#ff1e4a',
             //titleTextColor: "blue",
             titleTextSize: '48px',
             //rowTitleColor: 'blue',
             //rowTitleTextSize: 'medium',
-            rowContentColor: '#747474',
+            rowContentColor: '#e1e1e1',
             rowContentTextSize: '16px',
             rowContentPaddingTop: '10px',
             rowContentPaddingBottom: '10px',
             rowContentPaddingLeft: '50px',
             rowContentPaddingRight: '150px',
-            arrowColor: "#ff1e4a",
+            arrowColor: "white",
             transitionDuration: "1s",
             timingFunc: "ease"
           }}
