@@ -1,0 +1,42 @@
+.carruselprincipal{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containertitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 10em;
+    color: white;
+}
+
+.carruselprincipal img{
+    width: 12%;
+    margin: 0 2em;
+}
+
+.discord{
+    margin: 3em auto 0;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    border: 3px solid white;
+    width: 10%;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.discord:hover{
+    background-color: #ff2390;
+    transition: 0.5s;
+    cursor: pointer;
+}

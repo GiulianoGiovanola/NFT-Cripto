@@ -1,0 +1,48 @@
+.divheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3em;
+}
+
+.divheader div{
+    width: 30%;
+}
+
+.divheader div img{
+    width: 10%;
+}
+
+.containeroptions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 42% !important;
+}
+
+.divheader div, .containeroptions{
+    margin: 0.5em 0;
+}
+
+.containeroptions nav{
+    margin-right: 2em;
+}
+
+.intro{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.options{
+    margin-right: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+
+.options:hover{
+    color: #ff2390;
+    transition: 0.5s;
+}
