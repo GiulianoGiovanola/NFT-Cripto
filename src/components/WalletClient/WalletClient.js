@@ -137,7 +137,7 @@ const WalletClient = () => {
       {!wallet.provider ? (
         <div>
           <h2>Pink Rabbit NFT</h2>
-          <h4>Connect to Wallet!</h4>
+          {/*<h4>Connect to Wallet!</h4>*/}
           <p>
             Price: <span>0.05ETH</span>
           </p>
