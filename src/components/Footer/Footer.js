@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./Footer.module.css"
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <div className="content has-text-centered">
+      <footer className={styles["footer"]}>
+        <div className={styles["content has-text-centered"]}>
           <p>
-            &copy; 2024 Pink Rabbit NFT. Todos los derechos reservados.
+            &copy; 2024 Pink Rabbit NFT. All rights reserved.
           </p>
         </div>
       </footer>
