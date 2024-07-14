@@ -57,5 +57,5 @@ h1{
 }
 .App button:disabled {
   background-color: gray;
-  cursor:crosshair;
+  cursor:auto;
 }
