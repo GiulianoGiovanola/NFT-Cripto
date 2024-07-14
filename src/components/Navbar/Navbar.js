@@ -33,7 +33,7 @@ const Navbar = () => {
                     FAQ
                   </a>
                 </li>
-                {/*<li>
+                {/*<li> 
                   <a href="#About" className={styles["options"]}>
                     About
                   </a>
