@@ -133,7 +133,7 @@ const WalletClient = () => {
   button(1);*/
 
   return onboard ? (
-    <div className="wallet-client">
+    <div className={styles["wallet-client"]}>
       {!wallet.provider ? (
         <div>
           <h2>Pink Rabbit Collections</h2>
