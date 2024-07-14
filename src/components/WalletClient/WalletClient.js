@@ -156,7 +156,7 @@ const WalletClient = () => {
             <p>
               Price: <span>{price} ETH</span>
             </p>
-            <div className="cart">
+            <div className={styles["cart"]}>
               <div className="addRemove">
                 {/*<button className={styles["minus"]} onClick={button(-1)}>
                   -

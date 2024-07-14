@@ -49,7 +49,7 @@ const Home = () => {
     >
       <Navbar />
       <Hero />
-      <About />
+      {/*<About />*/}
       <Collection dataimg={dataimg} />
       <MintGeneral />
       <FAQ />
