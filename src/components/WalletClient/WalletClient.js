@@ -137,7 +137,6 @@ const WalletClient = () => {
       {!wallet.provider ? (
         <div>
           <h2>Pink Rabbit Collections</h2>
-          {/*<h4>Connect to Wallet!</h4>*/}
           <p>
             Price: <span>0.05ETH</span>
           </p>
@@ -151,11 +150,12 @@ const WalletClient = () => {
             )}
           </div>
           <div>
+            <h2>Pink Rabbit Collections</h2>
             <h4>Connected with {wallet.name}</h4>
+            <p>Balance {userBalance} eth</p>
             <p>
               Price: <span>{price} ETH</span>
             </p>
-            <p>Balance {userBalance} eth</p>
             <div className="cart">
               <div className="addRemove">
                 {/*<button className={styles["minus"]} onClick={button(-1)}>
