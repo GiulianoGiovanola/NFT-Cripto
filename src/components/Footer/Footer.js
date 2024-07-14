@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className={styles["footer"]}>
         <div>
           <p>
-            &copy; 2024 Pink Rabbit NFT. All rights reserved.
+            &copy; 2024 Pink Rabbit. All rights reserved.
           </p>
         </div>
       </footer>
