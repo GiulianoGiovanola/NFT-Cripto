@@ -1,8 +1,12 @@
 .buttonMint{
     display: block !important;
-    margin: 0 auto;
+    margin: 1.5em auto 0;
 }
 
 label{
     padding: 0 1em;
+}
+
+.cart{
+    padding-bottom: 1.5em;
 }
