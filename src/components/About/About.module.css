@@ -1,0 +1,15 @@
+.contentgeneral{
+    width: 60%;
+    margin: 0em auto 10em;
+}
+
+.content{
+    background: hsla(0, 0%, 100%, .3);
+    backdrop-filter: blur(25px);
+    padding: 5em;
+    border-radius: 4em;
+}
+
+.content h1{
+    text-transform: uppercase;
+}

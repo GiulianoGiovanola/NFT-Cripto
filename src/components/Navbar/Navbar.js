@@ -8,19 +8,19 @@ const Navbar = () => {
       <div className={styles["container"]}>
         <div className={styles["divheader"]}>
           <div>
-              <img
-                src="assets/logo.png"
-                width=""
-                height=""
-                alt="logo-persona"
-              />
+            <img
+              src="assets/logo.png"
+              width=""
+              height=""
+              alt="logo-persona"
+            />
           </div>
           <div className={styles["containeroptions"]}>
             <nav>
               <ul className={styles["intro"]}>
                 <li>
-                  <a href="#Collection" className={styles["options"]}>
-                    Collection
+                  <a href="#About" className={styles["options"]}>
+                    About
                   </a>
                 </li>
                 <li>
@@ -31,11 +31,6 @@ const Navbar = () => {
                 <li>
                   <a href="#FAQ" className={styles["options"]}>
                     FAQ
-                  </a>
-                </li>
-                <li> 
-                  <a href="#About" className={styles["options"]}>
-                    About
                   </a>
                 </li>
               </ul>
