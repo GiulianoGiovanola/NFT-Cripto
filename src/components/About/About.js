@@ -11,10 +11,9 @@ const About = () => {
           must appeal to, entice, and convince consumers to take action. There
           is no magic formula to write perfect ad copy; it is based on a number
           of factors, including ad placement, demographic, even the consumer’s
-          mood when they see your ad. 
+          mood when they see your ad.
         </p>
       </article>
-      <img src="assets/logo192.png" width="" height="" alt="firma" />
     </section>
   );
 };
